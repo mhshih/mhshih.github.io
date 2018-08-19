@@ -1,0 +1,16 @@
+<form action=/save_one/{{item.itemid}} method=POST>
+{% csrf_token %}
+
+<table border=1px>
+
+{% for column_name,column_value in item.items %}
+<tr>
+  <td>{{column_name}}</td>
+  <td><input name={{column_name}} value={{column_value}}></td>
+</tr>
+{% endfor %}
+
+</table>
+
+<input type=submit>
+</form>

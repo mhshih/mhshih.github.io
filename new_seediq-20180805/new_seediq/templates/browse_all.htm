@@ -1,0 +1,19 @@
+<table border=0px>
+    <tr>
+        <th></th>
+        {% for Chinese_header in items.0.keys %}
+        <th>{{Chinese_header}}</th>
+        {% endfor %}
+    </tr>
+    {% for item in items %}
+    <tr>
+      <form action=/edit_one/{{item.itemid}} method=POST>
+      {% csrf_token %}
+      <td><input type=submit value=modify></td>
+      {% for column_name,column_value in item.items %}
+      <td><input name={{column_name}} value={{column_value}}></td>
+      {% endfor %}
+      </form>
+    </tr>
+    {% endfor %}
+</table>
