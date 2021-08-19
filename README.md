@@ -1,4 +1,4 @@
-Welcome to my homepage!
+Welcome to <a href=http://mhshih.github.io>my homepage</a>!
 I am Simon Meng-Hsien Shih.
 I work at National Tsing Hua University as a postdoctoral research fellow, and teach computational linguistic at National Chung Cheng University.
 My research focuses on the construction and use of various  language resources, e.g., bilingual parallel corpora with part-of-speech tagging, syntactic and semantic role labeling.
