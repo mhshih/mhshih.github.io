@@ -1,6 +1,6 @@
 Welcome to <a href=http://mhshih.github.io>my homepage</a>!
 I am Simon Meng-Hsien Shih.
-I a postdoctoral research fellow at the NTHU Institute of Taiwan Languages and Language Teaching, and teach computational linguistic at the Center for National Chung Cheng University.
+I work as a postdoctoral research fellow at the NTHU Institute of Taiwan Languages and Language Teaching, and teach computational linguistic at the Center for National Chung Cheng University.
 My research focuses on the construction and use of various  language resources, e.g., bilingual parallel corpora with part-of-speech tagging, syntactic and semantic role labeling.
 You can browse my publications as follows.
 
