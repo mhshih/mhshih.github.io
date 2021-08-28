@@ -5,7 +5,7 @@ My research focuses on the construction and use of various  language resources, 
 You can browse my publications as follows.
 
 <h4>最小編輯距離與演算法</h4>
-兩字串之間的編輯距離可應用於機器翻譯以及命名實體辨識，以華語「農人分配水量」翻譯成客語「耕種人分水」為例：
+兩字串之間的編輯距離可應用於機器翻譯、命名實體辨識、以及語音辨識，以華語「農人分配水量」翻譯成客語「耕種人分水」為例：
 
 <h4>Journal articles</h4>
     <ol>
