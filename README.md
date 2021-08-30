@@ -6,7 +6,7 @@ You can browse my publications as follows.
 
 Recent post:
 
-[最小編輯距離與演算法](https://github.com/mhshih/mhshih.github.io/tree/master/align)
+[最小編輯距離與 Dynamic Programming 演算法](https://github.com/mhshih/mhshih.github.io/tree/master/align)
 
 <h4>Journal articles</h4>
     <ol>
