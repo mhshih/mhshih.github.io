@@ -1,0 +1,41 @@
+{% load static %}
+<head>
+<style>
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+   body{font-family:'cwTeXYen',sans-serif;
+        line-height: 2;
+        font-size: 18px;
+        font-weight:300;
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-left: 80px;
+       }
+   table{font-size:20px}
+   div.large{font-size:100px;
+             font-weight:600}
+   div.fontsize30{font-size:30px}
+   div.normal{font-size:16px}
+   .license{position:absolute;
+            font-size:10px;
+            bottom:100}
+   a.small{font-size:10px}
+   div.bottom{position:relative;
+       bottom:0}
+</style>
+<title>練練華語</title>
+</head>
+
+
+<body background={% static 'study-3698155_1000_clarity100_vignette100.jpg' %}>
+
+{% block content %}
+{% endblock %}
+
+
+<div class=bottom>
+    <a class=small href="https://icons8.com/icon/80319/home">Home icon by Icons8</a>
+
+    <a href=/><img src="https://img.icons8.com/flat_round/64/000000/home--v5.png"></a>
+</div>
+
+</body>

@@ -1,0 +1,49 @@
+{% extends 'base.htm' %}
+
+{% load static %}
+
+{% block content %}
+
+<h3><font color=#21618c>請點選正確的句子：</font></h3>
+<h3><font color=#21618c>Qǐng diǎnxuǎn zhèngquè de jùzi:</font></h3>
+
+<table>
+<tr><td>
+
+<form method=GET action=/answer/{{group_num}}/{{question_num}}/>
+<h4>
+{% for sentence in reading_question %}
+{{sentence}}<br>
+{% endfor %}
+</h4>
+    <input type=radio name=radio value=A>{{chinese1}}<br>
+                                         {{pinyin1}}<br>
+    <br>
+    <input type=radio name=radio value=B>{{chinese2}}<br>
+                                         {{pinyin2}}<br>
+     <br>
+     <input type=submit>
+</form>
+
+</td>
+
+<td>&nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp; </td>
+
+<td>
+    <img width=600px src={% static picture_filename %}>
+</td>
+
+</tr>
+</table>
+
+
+
+{% endblock %}

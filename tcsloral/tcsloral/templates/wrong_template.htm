@@ -1,0 +1,24 @@
+{% extends 'base.htm' %}
+
+{% load static %}
+
+{% block content %}
+
+<body bgcolor=#ffdab3>
+<h5><font color=#21618c>答錯了 QQ ...</h5>
+
+<img src={% static 'ncorrect-answer-4041502_1280.png' %}>
+
+ <br>
+ <br>
+
+<div class=normal>{{jiexi}}</div><br>
+<div class=normal>
+{% for sentence in jiexi2 %}
+{{sentence}}<br>
+{% endfor %}
+</div>
+
+<a href=/question/{{group_num}}/{{next_question_num}}/><img src="https://img.icons8.com/flat_round/64/000000/arrow--v3.png"></a>
+
+{% endblock %}
