@@ -1,24 +1,18 @@
-{% extends 'base.htm' %}
-
-{% load static %}
-
-{% block content %}
+<meta charset="UTF-8">
 
 <body bgcolor=#ffdab3>
-<h5><font color=#21618c>答錯了 QQ ...</h5>
 
-<img src={% static 'ncorrect-answer-4041502_1280.png' %}>
+<img src='ncorrect-answer-4041502_1280.png'>
 
  <br>
  <br>
 
-<div class=normal>{{jiexi}}</div><br>
 <div class=normal>
-{% for sentence in jiexi2 %}
-{{sentence}}<br>
-{% endfor %}
+「先A再B」與「一A就B」皆表示時間順序。「先A再B」表示前後順序，例如「我們先找位置再點菜。」；「一A就B」表示連續發生的兩件事，A事件結束馬上發生B事件，例如「他們一見面就聊天。」。<br>
+xiān A zài B yǔ yī A jiù B jiē biǎo shì shí jiān shùn xù。
+xiān A zài B biǎo shì qián hòu shùn xù ， lì rú wǒ men xiān zhǎo wèi zhi zài diǎn cài 。
+yī A jiù B biǎo shì lián xù fā shēng de liǎng jiàn shì ， A shì jiàn jié shù mǎ shàng fā shēng B shì jiàn ， lì rú tā me    n yí jiàn miàn jiù liáo tiān 。
 </div>
 
 <a href=/question/{{group_num}}/{{next_question_num}}/><img src="https://img.icons8.com/flat_round/64/000000/arrow--v3.png"></a>
 
-{% endblock %}
