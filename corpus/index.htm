@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+
+<style>
+body {padding: 1cm;}
+a {display: block;}
+</style>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<div class=container>
+
+<h2>臺灣本土語言語料庫</h2>
+
+<br>
+<form action=http://35.221.187.53:8000/query_results>
+
+<h5>1. 請點選欲查詢之語言和語料庫:</h5>
+<div>
+  <a data-bs-toggle=collapse href=#Taigi role=button>閩南語</a>
+	<div class=collapse id=Taigi>
+    <input type=radio name=corpus value="教育部閩南語辭典830650_11000900254_Attach1-19230筆詞義含詞類-斷詞11168_noEvaluation.tsv">教育部閩南語辭典830650_11000900254_Attach1-19230筆詞義含詞類-斷詞11168_noEvaluation.tsv</input>
+	<input type=radio name=corpus value=u-yan_new.tsv>語苑</input>
+	<input type=radio name=corpus value=liching-all_v3.tsv>荔鏡記</input>
+	</div>
+</div>
+
+<div>
+  <a data-bs-toggle=collapse href=#Hakka role=button>客家語</a>
+  <div class=collapse id=Hakka>
+    <input type=radio name=corpus value=Hakka0.tsv>教育部客家語常用詞辭典</input>
+  </div>
+</div>
+
+<div>
+  <a data-bs-toggle=collapse href=#Amis role=button>阿美語</a>
+  <div class=collapse id=Amis>
+    <input type=radio name=corpus value=1>南勢阿美語</input>
+    <input type=radio name=corpus value=2>秀姑巒阿美語</input>
+    <input type=radio name=corpus value=3>海岸阿美語</input>
+    <input type=radio name=corpus value=4>馬蘭阿美語</input>
+    <input type=radio name=corpus value=5>恆春阿美語</input>
+  </div>
+</div>
+
+<div>
+  <a data-bs-toggle=collapse href=#Atayal role=button>泰雅語</a>
+  <div class=collapse id=Atayal>
+    <input type=radio name=corpus value=6>賽考利克泰雅語</input>
+    <input type=radio name=corpus value=7>澤敖利泰雅語</input>
+    <input type=radio name=corpus value=8>汶水泰雅語</input>
+    <input type=radio name=corpus value=9>萬大泰雅語</input>
+    <input type=radio name=corpus value=10>四季泰雅語</input>
+    <input type=radio name=corpus value=11>宜蘭澤敖利泰雅語</input>
+  </div>
+</div>
+
+<div>
+  <a data-bs-toggle=collapse href=#Saisiyat  role=button>賽夏語</a>
+  <div class=collapse id=Saisiyat >
+  <input type=radio name=corpus value=13>賽夏語</input>
+  </div>
+</div>
+
+<div>
+  <a data-bs-toggle=collapse href=#Thao  role=button>邵語</a>
+  <div class=collapse id=Thao >
+  <input type=radio name=corpus value=14>邵語</input>
+  </div>
+</div>
+
+<div>
+  <a data-bs-toggle=collapse href=#賽德克語 role=button>賽德克語</a>
+  <div class=collapse id=賽德克語>
+    <input type=radio name=corpus value=15>都達語</input>
+    <input type=radio name=corpus value=16>德固達雅語</input>
+    <input type=radio name=corpus value=17>德路固語</input>
+  </div>
+</div>
+
+<div>
+  <a data-bs-toggle=collapse href=#布農語 role=button>布農語</a>
+  <div class=collapse id=布農語>
+    <input type=radio name=corpus value=18>卓群布農語</input>
+    <input type=radio name=corpus value=19>卡群布農語</input>
+    <input type=radio name=corpus value=20>丹群布農語</input>
+    <input type=radio name=corpus value=21>巒群布農語</input>
+    <input type=radio name=corpus value=22>郡群布農語</input>
+  </div>
+</div>
+
+<div>
+  <a data-bs-toggle=collapse href=#排灣語 role=button>排灣語</a>
+  <div class=collapse id=排灣語>
+    <input type=radio name=corpus value=23>東排灣語</input>
+    <input type=radio name=corpus value=24>北排灣語</input>
+    <input type=radio name=corpus value=25>中排灣語</input>
+    <input type=radio name=corpus value=26>南排灣語</input>
+  </div>
+</div>
+
+<div>
+  <a data-bs-toggle=collapse href=#魯凱語 role=button>魯凱語</a>
+  <div class=collapse id=魯凱語>
+    <input type=radio name=corpus value=27>東魯凱語</input>
+    <input type=radio name=corpus value=28>霧台魯凱語</input>
+    <input type=radio name=corpus value=29>大武魯凱語</input>
+    <input type=radio name=corpus value=30>多納魯凱語</input>
+    <input type=radio name=corpus value=31>茂林魯凱語</input>
+    <input type=radio name=corpus value=32>萬山魯凱語</input>
+  </div>
+</div>
+
+<div>
+<a data-bs-toggle=collapse href=#Taroko  role=button>太魯閣語</a>
+<div class=collapse id=Taroko >
+<input type=radio name=corpus value=33>太魯閣語</input><br>
+</div>
+</div>
+
+<div>
+<a data-bs-toggle=collapse href=#Kavalan  role=button>噶瑪蘭語</a>
+<div class=collapse id=Kavalan >
+<input type=radio name=corpus value=34>噶瑪蘭語</input><br>
+</div>
+</div>
+
+<div>
+<a data-bs-toggle=collapse href=#Tsou  role=button>鄒語</a>
+<div class=collapse id=Tsou >
+<input type=radio name=corpus value=34>鄒語</input><br>
+</div>
+</div>
+
+<div>
+  <a data-bs-toggle=collapse href=#卑南語 role=button>卑南語</a>
+  <div class=collapse id=卑南語>
+    <input type=radio name=corpus value=38>南王卑南語</input>
+    <input type=radio name=corpus value=39>知本卑南語</input>
+    <input type=radio name=corpus value=40>西群卑南語</input>
+    <input type=radio name=corpus value=41>建和卑南語</input>
+  </div>
+</div>
+
+<div>
+<a data-bs-toggle=collapse href=#雅美語  role=button>雅美語</a>
+<div class=collapse id=雅美語 >
+<input type=radio name=corpus value=42>雅美語</input><br>
+</div>
+</div>
+
+<div>
+<a data-bs-toggle=collapse href=#Sakizaya  role=button>撒奇萊雅語</a>
+<div class=collapse id=Sakizaya >
+<input type=radio name=corpus value=43>撒奇萊雅語</input><br>
+</div>
+</div>
+
+<div>
+<a data-bs-toggle=collapse href=#Kanakanavu  role=button>卡那卡那富語</a>
+<div class=collapse id=Kanakanavu >
+<input type=radio name=corpus value=36>卡那卡那富語</input><br>
+</div>
+</div>
+
+<div>
+<a data-bs-toggle=collapse href=#Hlaalua  role=button>拉阿魯哇語</a>
+<div class=collapse id=Hlaalua >
+<input type=radio name=corpus value=37>拉阿魯哇語</input><br>
+</div>
+</div>
+
+<br>
+<h5>2. 請於欲查詢之功能輸入：</h5>
+<div class=form-group>
+  <label>關鍵詞查詢 (KWIC concordance) : </label>
+  <input class=form-control name=kw placeholder="Enter keyword">
+</div>
+<div class=form-group>
+  <label>切詞查詢 (bigram) : </label>
+  <input class=form-control name=gram placeholder="Enter bigram">
+  <small class="form-text text-muted">(用於閩南語歷史文本)</small>
+</div>
+<div class=form-group>
+  <label>搭配詞組查詢 (collocation) : </label>
+  <table>
+    <tr><td><input name=w1 placeholder="Enter the first word"></td><td><small class="form-text text-muted">(用於閩南語歷史文本)</small></td></tr>
+    <tr><td></td><td><input name=w21 placeholder="Enter the second word"></td></tr>
+    <tr><td></td><td><input name=w22 placeholder="Enter the second word"></td></tr>
+    <tr><td></td><td><input name=w23 placeholder="Enter the second word"></td></tr>
+  </table>
+</div>
+
+<input type=submit>
+
+</form>
+<hr>
+
+<h4>本網頁另外提供閩南語線上斷詞服務，以及相關本土語言資源下載連結：</h4>
+
+<form action=http://34.80.160.234:8004/segmenter>
+請輸入欲進行斷詞的閩南語文章<br>
+<textarea cols=40 rows=10 name=text></textarea><br>
+<input type=submit>
+</form>
+<hr>
+
+<h4>本土語言資源下載連結：</h4>
+<ol>
+    <li><a target=_blank href=https://hakkadict.moe.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=5Jhdgz/newsresult_format0?r1=1&searchall=1>《臺灣客家語常用詞辭典》內容資料(1110429)</a>
+    <li><a target=_blank href=https://github.com/Taiwanese-Corpora/Taiwanese-Corpora.github.io/blob/main/resources/台華共同詞表.xlsx?raw=true>台華共同詞表</a>
+    <li><a target=_blank href= ></a>
+</ol>
+
+</html>
